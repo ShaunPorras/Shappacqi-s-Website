@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java to HTML/CSS/JS Conversion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .output {
+            margin-top: 20px;
+            font-size: 24px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Java to HTML/CSS/JS Conversion</h1>
+    <button id="showMessage">Show Message</button>
+    <div class="output" id="output"></div>
+
+    <script>
+        document.getElementById('showMessage').addEventListener('click', function() {
+            let message = "";
+            for (let i = 0; i < 20; i++) {
+                message += "YOU ARE GAY<br>";
+            }
+            document.getElementById('output').innerHTML = message;
+        });
+    </script>
+</body>
+</html>
